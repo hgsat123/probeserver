@@ -1,8 +1,7 @@
 syntax = "proto3";
 
+import "github.com/google/cloudprober/probes/external/proto/server.proto";
 package probeserver;
-
-import "github.com/google/cloudprober/probes/external/serverutils/server.proto";
 
 service Probe {
   rpc Serve (cloudprober.ProbeRequest) returns (cloudprober.ProbeReply) {}
